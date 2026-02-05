@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1a214d;
+    text-align: left;
+    background-color: #fff;
+}
+
+.header{
+    position: relative;
+    background-color: #000;
+    height: 100vh;
+    max-height: 625px;
+}
+
+.header .navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.header .bg-body-tertiary {
+    background-color: #0000 !important;
+    border-bottom: 1px solid #fff7;
+}
+
+.header .bg-body-tertiary, .navbar, .navbar-expand-lg{
+    /*pendiente*/
+    color: #fff;
+}
+
+.header .navbar .container-fluid .navbar-brand {
+    /*este es el boton main o donde ira el logo*/
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+    margin-right: 10%;
+    
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #000;
+}
+
+.header .navbar .navbar-nav{
+    /*este es el contenedor del navbar*/
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    /*estos son los a de la barra de navegación*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    font-weight: 500;
+    transition: all 0.6s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    /*estos son los a de la barra de navegación*/
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.header .img-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100% ;
+}
+
+.header .img-header img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/*Main*/
+
+
+main {
+    z-index: 5;
+    border-top: 1px solid #000;
+    position: relative;
+}
+
+.main .img-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100% ;
+}
+
+.main .img-main img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.main-h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.card-container {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+.main-h2:last-of-type {
+    margin-top: 4rem;
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 2rem;
+    color: #fff;
+    height: auto;
+    font-weight: bold;
+    flex-flow: row wrap;
+    gap: 1.4rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.integrantes {
+    width: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.integrantes h2 {
+    margin-bottom: 1rem;
+}
+
+.attention_a {
+    text-align: center;
+    width: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.redes {
+    align-items: center;
+    width: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-indent: 1rem;
+}
+
+.redes a:hover {
+    color: #e8f539;
+    transition: all 0.7s;
+}
+
+.redes a img {
+    width: 2.5rem;
+}
+
+.derechos_reservados {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
