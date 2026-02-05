@@ -251,6 +251,7 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
+
 }
 
 .redes a {
