@@ -146,34 +146,70 @@ main {
     text-transform: capitalize;
 }
 
-.main .container-main .main-especialidades h2:last-of-type {
-    margin-top: 4rem;
+.main .container-main .main-especialidades,h2 {
+    margin-top: 2rem;
 }
 
 .main .container-main .main-especialidades .card-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap:0.2rem
+    gap:0.2rem;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .main .container-main .main-especialidades .card-container .card {
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px #0006;
+    border: 1px solid #32643f9d;
     transition: all 0.7s;
     width: 20rem;
+
 }
 
 .main .container-main .main-especialidades .card-container .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px #0008;
+    cursor: pointer;
 }
 
-.main .container-main .main-especialidades .card-container .card .card-body:hover {
-    background-color: #fcf3dd;
+
+.container-main .main-especialidades .card-container .card .card-body:hover {
+    background-color: #d7f7cfd5;
 }
 
+
+.main .container-main .main-services h2 {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    color: #333;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.main .container-main .main-services .card-container {
+    width: 100%;
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.main .container-main .main-services .card-container .container-sm{    
+    background-color: #fff;
+    height: 20vh;
+    width: 15rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main .container-main .main-services .card-container .container-sm a{
+    text-decoration: none;
+    color: #000;
+}
 
 /*Footer*/
 
