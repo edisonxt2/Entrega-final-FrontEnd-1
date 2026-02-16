@@ -18,12 +18,15 @@ const consumoApi = async () => {
 
 const mostrarPeliculas = async () => {
     const datos = await consumoApi();
-    console.log(datos);
-    boxCargando.innerHTML = '';
-    datos.forEach(pelicula => {
-        const card = document.createElement('div');
-        card.classList.add('cards');
-        card.innerHTML = `
+    if (!datos) {
+        boxCargando.innerHTML = 'No se pudieron cargar los datos';
+        return;
+    } else {
+        boxCargando.innerHTML = '';
+        datos.forEach(pelicula => {
+            const card = document.createElement('div');
+            card.classList.add('cards');
+            card.innerHTML = `
             <div class="cards">
                 <img src="${pelicula.image_url}" alt="${pelicula.title}">
                 <div class="cards__content">
@@ -34,9 +37,11 @@ const mostrarPeliculas = async () => {
                 </div>
             </div>
         `;
-        boxCards.appendChild(card);
+            boxCards.appendChild(card);
+        }
+
+        );
     }
-    );
 }
 
 mostrarPeliculas();
