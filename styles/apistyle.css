@@ -115,18 +115,19 @@ body {
 
 /*MAIN***********************************************+*/
 
-.main-title{
+.main-title {
     text-align: center;
     font-size: 2.4rem;
     color: #1a214d;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
 .card-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 0.2rem;
+    gap: 1rem;
     padding-bottom: 8rem;
     border-bottom: 1px solid #ccc;
     margin-top: 2rem;
@@ -140,9 +141,6 @@ body {
     height: 22vw;
     background-color: #f2f2f2;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
@@ -198,3 +196,4 @@ body {
     color: #777;
     line-height: 1.4;
 }
+

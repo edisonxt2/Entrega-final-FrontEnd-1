@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/catalogo.css">
     <title>Libreria</title>
 
 </head>
@@ -15,10 +15,6 @@
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-
-                <!--Este es la parte de la barra de navegación que dice NAVBAR, fijado arriba a la izquierda-->
-                <!--Este se supone va a hacer el logo o donde se va a ubicar-->
-                <!--De momento sin ideas para realizar lo-->
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -48,7 +44,8 @@
                     </ul>
                     <!--Espacio para el boton de login falta terminar-->
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                         <button class="btn btn-outline-success" type="submit">Login</button>
                     </form>
                 </div>
@@ -56,61 +53,17 @@
         </nav>
         <!--Esta es la imagen del header que es un libro y el titulo; quizá le debí haber puesto otro titulo :(-->
         <div class="img-header">
-            <img src="../images/fondo-header.png" class="img-fluid" alt="Imagen de header">
+            <img src="../images/bannermain.jpg" class="img-fluid" alt="Imagen de header">
         </div>
         <div class="content"></div>
     </header>
-
-    <main class="main" id="main">
-        <div class="container-main container-fluid" id="main">
-            <div class="img-main">
-                <img src="../images/fondomain.png" class="img-fluid" alt="Imagen fondo">
-            </div>
-            <section class="main-cards">
-                <h2 class="main-h2">Descubra las especialidades del catálogo
-                    de un vistazo</h2>
-                <div class="card-container" id="card-container"></div>
-            </section>
-            <!-------------------------------------------------------->
-            <section class="main-cards">
-                <h2 class="main-h2">Recomendaciones</h2>
-                <div class="card-container" id="cards-container">
-                </div>
-            </section>
-            <section class="main-cards">
-                <h2 class="main-h2">Nuestros servicios</h2>
-                <div class="card-container ">
-                    
-                </div>
-                
-            </section>
+    <main>
+        <div class="card-container" id="card-container">
         </div>
     </main>
-    <footer>
-        <div class="integrantes">
-            <h2>INTEGRANTES</h2>
-            <p>Edison Santiago Vanegas</p>
-            <!--Aquí sus nombres :)-->
-            <p>....</p>
-            <p>....</p>
-            <p>Miguel Ángel Lozano</p>
-        </div>
-        <div class="attention_a">
-            <h2>Horario de atención</h2>
-            <p>Lunes a Viernes: 9:00 - 18:00</p>
-            <p>Sábados: 10:00 - 14:00</p>
-        </div>
-        <div class="redes">
-            <a href="#"><img src="../images/facebook.png" alt="Logo facebook"> libreriatodoamil </a>
-            <a href="#"><img src="../images/whatsapp.png" alt="Logo Whatsap"> @libreriatodomil </a>
-            <a href="#"><img src="../images/instagram.png" alt="Logo Instagram"> Libreria_t_a_Mil </a>
-        </div>
-        <div class="derechos_reservados">
-            <p>Todos los derechos son reservados ©️</p>
-        </div>
-    </footer>
 
-    <script src="../scripts/main.js"></script>
+
+    <script src="../scripts/catalogo.js"></script>
 </body>
 
 </html>
