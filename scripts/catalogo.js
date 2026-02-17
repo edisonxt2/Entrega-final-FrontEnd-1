@@ -38,7 +38,7 @@ const pintarLibro = async () => {
 
 const fetchBuscar = async (nomLibro) => {
     try {
-        const buscarL = await fetch(`https://openlibrary.org/search.json?title=${encodeURIComponent(nomLibro)}`)
+        const buscarL = await fetch(`https://www.googleapis.com/books/v1/volumes?q=search+intitle${encodeURIComponent(nomLibro)}`)
         const datosBl = await buscarL.json();
         return datosBl
 
@@ -48,8 +48,8 @@ const fetchBuscar = async (nomLibro) => {
 
 buscar.addEventListener('keydown', async(buscar)=>{
     if(buscar.key === 'Enter'){
-        const buscarlb = buscar.returnValue;
         buscar.preventDefault();
+        const buscarlb = buscar.value;
         const buscarl = await fetchBuscar(buscarlb);
         console.log(buscarl)
     }
