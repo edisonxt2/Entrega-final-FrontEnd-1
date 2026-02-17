@@ -1,4 +1,5 @@
 const containerCards = document.getElementById('card-container')
+const buscar = document.getElementById('search')
 
 const fetchLibros = async () => {
     try {
@@ -11,7 +12,6 @@ const fetchLibros = async () => {
 
 const pintarLibro = async () => {
     const pintarlb = await fetchLibros();
-    console.log(pintarlb);
     if (!pintarlb) {
 
     } else {
@@ -34,4 +34,30 @@ const pintarLibro = async () => {
         });
     }
 }
+
+
+const fetchBuscar = async (nomLibro) => {
+    try {
+        const buscarL = await fetch(`https://openlibrary.org/search.json?title=${encodeURIComponent(nomLibro)}`)
+        const datosBl = await buscarL.json();
+        return datosBl
+
+    } catch (error) {
+    }
+}
+
+buscar.addEventListener('keydown', async(buscar)=>{
+    if(buscar.key === 'Enter'){
+        const buscarlb = buscar.returnValue;
+        buscar.preventDefault();
+        const buscarl = await fetchBuscar(buscarlb);
+        console.log(buscarl)
+    }
+}
+
+)
+
+
+
+
 pintarLibro();
