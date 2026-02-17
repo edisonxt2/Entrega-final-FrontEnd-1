@@ -115,13 +115,14 @@ body {
 
 /*MAIN***********************************************+*/
 
-.main-title{
+.main-title {
     text-align: center;
     font-size: 2.4rem;
     color: #1a214d;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
 .card-container {
     display: flex;
     flex-flow: row wrap;
@@ -198,3 +199,4 @@ body {
     color: #777;
     line-height: 1.4;
 }
+

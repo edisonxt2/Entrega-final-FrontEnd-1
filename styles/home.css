@@ -7,11 +7,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
     color: #1a214d;
-    text-align: left;
-    background-color: #fff;
 }
 
 .header{
@@ -136,7 +132,7 @@ main {
     opacity: 0.6;
 }
 
-.main .container-main .main-especialidades h2 {
+.main .container-main .main-cards h2 {
     text-align: center;
     margin: 2rem 0;
     font-size: 2.5rem;
@@ -146,69 +142,128 @@ main {
     text-transform: capitalize;
 }
 
-.main .container-main .main-especialidades,h2 {
+.main .container-main .main-cards,h2 {
     margin-top: 2rem;
 }
 
-.main .container-main .main-especialidades .card-container {
+.main .container-main .main-cards .card-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap:0.2rem;
     padding-bottom: 8rem;
     border-bottom: 1px solid #ccc;
+    
 }
 
-.main .container-main .main-especialidades .card-container .card {
+.main .container-main .main-cards .card-container img {
+    width: 100%;
+    height: 23rem;
+    object-fit: fill;
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+.main .container-main .main-cards .card-container img:hover {
+    width: 100%;
+    scale: 0.95;
+    
+}
+
+.main .container-main .main-cards .card-container .card {
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px #0006;
     border: 1px solid #32643f9d;
-    transition: all 0.7s;
+    transition: all 1s;
     width: 20rem;
 }
 
-.main .container-main .main-especialidades .card-container .card:hover {
-    transform: scale(1.05);
+.main .container-main .main-cards .card-container .card:hover {
+    transform: scale(1.03);
     box-shadow: 0 8px 16px #0008;
     cursor: pointer;
 }
 
 
-.container-main .main-especialidades .card-container .card .card-body:hover {
+.container-main .main-cards .card-container .card .card-body:hover {
     background-color: #d7f7cfd5;
 }
 
 
-.main .container-main .main-services h2 {
-    text-align: center;
-    margin: 3rem 0;
-    font-size: 2.5rem;
-    color: #333;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.main .container-main .main-services .card-container {
-    width: 100%;
+/*Card form universe*********/
+/* From Uiverse.io by gharsh11032000 */
+.cards {
+    position: relative;
+    width: 22vw;
+    height: 27vw;
+    background-color: #f2f2f2;
+    border-radius: 10px;
     display: flex;
-    padding-bottom: 4rem;
-}
-
-.main .container-main .main-services .card-container .container-sm{    
-    background-color: #fff;
-    height: 20vh;
-    width: 15rem;
-    text-align: center;
-    display: flex;
+    align-items: center;
     justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s;
+    cursor: pointer;
 }
 
-.main .container-main .main-services .card-container .container-sm a{
-    text-decoration: none;
-    color: #000;
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+
 }
+
+.cards__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s;
+    font-weight: normal;
+}
+
+.cards:hover .cards__content {
+    transform: rotateX(0deg);
+    font-weight: normal;
+    background-color: #f2f2f2;
+    color: #000;
+
+}
+
+.cards__title {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+.cards .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards:hover .img {
+    scale: 0;
+    z-index: -1;
+}
+
+.cards__description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.4;
+}
+
+
 
 /*Footer*/
 
