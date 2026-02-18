@@ -30,7 +30,8 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item"></li>
+                          <li class="nav-item">
 
                             <a class="nav-link" href="catalogo.html">Catalogo</a>
                         </li>
@@ -49,14 +50,14 @@
                     <!--Espacio para el boton de login falta terminar-->
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Login</button>
+<button class="btn btn-outline-success" type="button" onclick="window.location.href='login.html'">Login</button>
                     </form>
                 </div>
             </div>
         </nav>
         <!--Esta es la imagen del header que es un libro y el titulo; quizá le debí haber puesto otro titulo :(-->
         <div class="img-header">
-            <img src="../images/fondo-header.png" class="img-fluid" alt="Imagen de header">
+            <img src="../images/alfin.jpg" class="img-fluid" alt="Imagen de header">
         </div>
         <div class="content"></div>
     </header>
@@ -69,7 +70,50 @@
             <section class="main-cards">
                 <h2 class="main-h2">Descubra las especialidades del catálogo
                     de un vistazo</h2>
-                <div class="card-container" id="card-container"></div>
+
+                <!--Esta es la imagen del fondo de main, le puse una imagen con las lineas y con el z-index en el css los mande hacia atrás-->
+                <div class="img-main">
+                    <img src="../images/fondedelmil.jpg" class="img-fluid" alt="Imagen fondo">
+                </div>
+                <div class="card-container ">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body card1">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card’s
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body card2">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card’s
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body card3">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card’s
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
             </section>
             <!-------------------------------------------------------->
             <section class="main-cards">
@@ -91,7 +135,7 @@
             <h2>INTEGRANTES</h2>
             <p>Edison Santiago Vanegas</p>
             <!--Aquí sus nombres :)-->
-            <p>....</p>
+            <p>Yisleza Vargas Holguin</p>
             <p>....</p>
             <p>Miguel Ángel Lozano</p>
         </div>

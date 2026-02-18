@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+/* Fondo */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/fondedelmil.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Barra de navegación fija arriba */
+.navbar {
+  background: transparent;   
+  padding: 10px 20px;
+  background-image: url(../images/fondedelmil.jpg); 
+  z-index: -1;               
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(2.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Contenido principal centrado */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;       
+  padding-top: 60px;   
+  box-sizing: border-box;
+}
+
+/* Formulario */
+.formulario {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 320px;
+  backdrop-filter: blur(6px);
+}
+
+.formulario h2 { text-align: center; margin-bottom: 20px; color: #333; }
+.formulario input, .formulario select { width: 100%; padding: 10px; margin-top: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; }
+.formulario button { width: 100%; padding: 12px; background-color: #0077cc; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+.formulario button:hover { background-color: #005fa3; }
