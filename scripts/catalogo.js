@@ -1,6 +1,8 @@
 const containerCards = document.getElementById('card-container')
 const buscar = document.getElementById('search')
 
+//leer los comentarios del main.js para entender este, basicamente es lo mismo; hay una función en pruebas que estoy haciendo que es la de buscar pero cometí un error y es que la api que consumi parece que no tiene servicio de buscar por titulo de libro... 
+
 const fetchLibros = async () => {
     try {
         const librosRes = await fetch('https://openlibrary.org/search.json?subject=fantasy&limit=15')
@@ -35,7 +37,7 @@ const pintarLibro = async () => {
     }
 }
 
-
+//esta es la función comentada arriba que deberia buscar por titulo de libro pero solo busca por autor :(
 const fetchBuscar = async (nomLibro) => {
     try {
         const buscarL = await fetch(`https://www.googleapis.com/books/v1/volumes?q=search+intitle${encodeURIComponent(nomLibro)}`)

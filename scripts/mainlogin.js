@@ -20,6 +20,7 @@ botonEntrar.addEventListener("click", function() {
   for (; intentos > 0; intentos--) {
     if (usuarioIngr === USUARIO_CORRECTO && claveIngr === CLAVE_CORRECTA) {
       msjBienvenido.textContent = "¡Bienvenido a nuestra Biblioteca!";
+      window.location.href='index.html'
       break; 
     } else {
       intentos--;
@@ -27,7 +28,6 @@ botonEntrar.addEventListener("click", function() {
         msjBienvenido.textContent = `Credenciales incorrectas. Te quedan ${intentos} intento(s).`;
       } else {
         msjBienvenido.textContent = "Usuario bloqueado. Ha superado el número de intentos.";
-     
       }
       break; 
     }
