@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>login</title>
   <link rel="stylesheet" href="../styles/loginstyle.css">
   <link rel="icon" href="data:,">
 </head>
+
 <body>
-<nav class="navbar">
-  <ul>
-    <li><a href="../html/index.html">Home</a></li>
-    <li><a href="#">Catálogo</a></li>
-    <li><a href="#">Reservas</a></li>
-    <li><a href="#">Contacto</a></li>
-    <li><a href="../html/api.html">APIS</a></li>
-  </ul>
-</nav>
+  <main class="main-content">
 
- <main class="main-content">
-  
-  <h1>Ingreso a la Biblioteca virtual</h1>
-   <!-- usuario y contraseña -->
-  <label for="usuario">Usuario:</label>
-  <input type="text" id="usuario" placeholder="Ingrese su usuario">
+    <h1>Ingreso a la Biblioteca virtual</h1>
+    <!-- usuario y contraseña -->
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" placeholder="Ingrese su usuario">
 
-  <label for="clave">Contraseña:</label>
-  <input type="password" id="clave" placeholder="Ingrese su contraseña">
+    <label for="clave">Contraseña:</label>
+    <input type="password" id="clave" placeholder="Ingrese su contraseña">
 
-  <!--boton ingresar se usa el onclick para que no navege a otra pagina sino que use solo la logica-->
-  <button id="botonEntrar">Ingresar</button>
+    <!--boton ingresar se usa el onclick para que no navege a otra pagina sino que use solo la logica-->
+    <button id="botonEntrar">Ingresar</button>
 
-  <!--boton de registro se usa el onclick para que no navege a otra pagina sino que use solo la logica-->
-  <button class="btn btn-outline-success" type="button" onclick="window.location.href='formulario.html'">
-  Registrarme
-</button>
-<!-- cuadro de mensaje manejo del DOM -->
-   <div id="msjBienvenido">Bienvenido, por favor ingrese sus credenciales.</div>
-</main>
+    <!--boton de registro se usa el onclick para que no navege a otra pagina sino que use solo la logica-->
+    <button class="btn btn-outline-success" type="button" onclick="window.location.href='formulario.html'">
+      Registrarme
+    </button>
+    <!-- cuadro de mensaje manejo del DOM -->
+    <div id="msjBienvenido">Bienvenido, por favor ingrese sus credenciales.</div>
+  </main>
 
 
 
-  
+
   <script src="../scripts/mainlogin.js"></script>
 </body>
+
 </html>
