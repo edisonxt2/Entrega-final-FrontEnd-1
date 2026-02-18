@@ -17,8 +17,9 @@ body {
 .header {
     position: relative;
     background-color: #000;
-    height: 100vh;
+    height: 30vh;
     max-height: 625px;
+    box-shadow: 0 0 0.9rem #1a214d;
 }
 
 .header .navbar {
@@ -113,34 +114,31 @@ body {
     opacity: 0.7;
 }
 
-/*MAIN***********************************************+*/
-
-.main-title {
-    text-align: center;
-    font-size: 2.4rem;
-    color: #1a214d;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+/*******************************************************************************/
+main {
+    background: linear-gradient(to right, #ccc, #fff,#ccc);
+    padding: 4rem 0;
 }
-
 .card-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 1rem;
+    justify-content: space-around;
+    gap: 2rem;
     padding-bottom: 8rem;
     border-bottom: 1px solid #ccc;
-    margin-top: 2rem;
+    margin: 0 4rem;
     z-index: 14;
 }
 
 /* From Uiverse.io by gharsh11032000 */
 .card {
     position: relative;
-    width: 22vw;
-    height: 22vw;
+    width: 20rem;
+    height: 22rem;
     background-color: #f2f2f2;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
@@ -192,7 +190,7 @@ body {
 
 .card__description {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #777;
     line-height: 1.4;
 }
