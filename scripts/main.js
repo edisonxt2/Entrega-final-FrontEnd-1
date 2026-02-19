@@ -1,7 +1,6 @@
 const containerCards = document.getElementById('card-container')
-const containerCardsAut = document.getElementById('cards-container')
 
-
+//Esta es la función que llama hace la conexión a la api, devuelve la respuesta y luego si tenemos conexión y todo está ok, pasa la respuesta recibida a tipo json...
 const fetchLibros = async () => {
     try {
         const librosRes = await fetch('https://openlibrary.org/search.json?subject=fantasy&limit=16')
@@ -11,23 +10,13 @@ const fetchLibros = async () => {
     }
 }
 
-const fetchBuscar = async (nomLibro) => {
-    try {
-        const buscarL = await fetch(`https://openlibrary.org/search.json?q= ${encodeURIComponent(nomLibro)}`)
-        const datosBl = await buscarL.json();
-        // console.log(datosBl)
-        return datosBl
-    } catch (error) {
-    }
-}
-
-
+//Esta es la función que toma los datos que trajimos de la función de arriba, y lo que hace es que pinta esos datos accediendo al objeto que queremos traer en una card; para pintarlos en una card lo que hice fue lo que el profe nos mostró en claso, creamos un div y le agregamos una clase, luego de eso ponemos la estructura del html en el forech(que este es el que se encarga de recorrer cada objeto y por cierto el slice que esta antes del forech es solo para limitar la cantidad de iteracciones que hace el bucle for). Finalmente cuando hace la creación de esa estructura lo agregamos como hijo al contenedor padre que está en el HTML y que capturamos arriba en una constante...
 const pintarLibro = async () => {
     const pintarlb = await fetchLibros();
     if (!pintarlb) {
 
     } else {
-        pintarlb.docs.slice(0, 4).forEach(libro => {
+        pintarlb.docs.slice(0, 3).forEach(libro => {
             const card = document.createElement('div');
             card.classList.add('card');
             const imagen = libro.cover_i
@@ -45,6 +34,5 @@ const pintarLibro = async () => {
     }
 
 }
-
 
 pintarLibro();
