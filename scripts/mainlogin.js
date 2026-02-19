@@ -4,6 +4,7 @@ const CLAVE_CORRECTA = "Leyendo2025";
 
 // intentos
 let intentos = 3;
+let ultimoUsuario = ""; 
 
 // DOM
 const usuario = document.getElementById("usuario");
@@ -16,12 +17,16 @@ botonEntrar.addEventListener("click", function() {
   const usuarioIngr = usuario.value;
   const claveIngr = clave.value;
 
+  // Si el usuario cambió, se reinicia el conteo de intentos 
+  if (usuarioIngr !== ultimoUsuario) {
+    intentos = 3;
+    ultimoUsuario = usuarioIngr;
+  }
 
-  for (; intentos > 0; intentos--) {
+  if (intentos > 0) {
     if (usuarioIngr === USUARIO_CORRECTO && claveIngr === CLAVE_CORRECTA) {
       msjBienvenido.textContent = "¡Bienvenido a nuestra Biblioteca!";
-      window.location.href='index.html'
-      break; 
+      window.location.href = "index.html";
     } else {
       intentos--;
       if (intentos > 0) {
@@ -29,8 +34,8 @@ botonEntrar.addEventListener("click", function() {
       } else {
         msjBienvenido.textContent = "Usuario bloqueado. Ha superado el número de intentos.";
       }
-      break; 
     }
+  } else {
+    msjBienvenido.textContent = "Usuario bloqueado. Ha superado el número de intentos.";
   }
-
 });

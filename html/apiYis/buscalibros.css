@@ -1,0 +1,248 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #e8d9c0;
+    background-image: linear-gradient(45deg, #e8d9c0 0%, #d4bc9a 100%);
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    min-height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.1"/></svg>');
+    pointer-events: none;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.header .bg-body-tertiary {
+    background-color: #0000 !important;
+    border-bottom: 2px solid #ab8e6a;
+}
+
+/****************************************************************************/
+.title {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    font-size: 2.5rem;
+    color: #5a3e2b;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-shadow: 2px 2px 0 #d4bc9a, 3px 3px 0 rgba(90, 62, 43, 0.2);
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.title::after {
+    content: "✦ ✦ ✦";
+    display: block;
+    font-size: 1.2rem;
+    color: #ab8e6a;
+    margin-top: 10px;
+    letter-spacing: 8px;
+}
+
+.header {
+    position: relative;
+    background: #7c5f42;
+    background: linear-gradient(145deg, #8b6f50 0%, #5a3e2b 100%);
+    border-bottom: 4px solid #c9a87c;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), inset 0 1px 3px rgba(255, 235, 200, 0.6);
+    font-family: 'Georgia', serif;
+    border-top: 2px solid #e4c9a8;
+    position: relative;
+    z-index: 10;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #faf0db;
+    font-size: 1.15rem;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+    border-radius: 20px 5px 20px 5px;
+    text-shadow: 2px 2px 3px #2a1e14;
+    font-style: italic;
+    border: 1px solid transparent;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: #b48c5c;
+    color: #fff8e7;
+    transform: scale(1.05);
+    border-bottom: 2px solid #e9d2b0;
+    border: 1px solid #e9d2b0;
+    box-shadow: 0 0 10px rgba(233, 210, 176, 0.5);
+    text-decoration: none;
+}
+
+/* Botón  */
+.header .navbar .collapse .d-flex .btn {
+    background-color: #b48c5c;
+    color: #2c1e12;
+    border: 2px solid #efdecb;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), inset 0 1px 3px #efdecb;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 25px 8px 25px 8px;
+    transition: all 0.3s;
+}
+
+.header .navbar .collapse .d-flex .btn:hover {
+    background-color: #c9a87c;
+    box-shadow: 2px 2px 8px #2a1e14;
+    transform: translateY(-2px);
+    border-color: #fff3df;
+}
+
+h1 {
+    color: #4a3724;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0 #e9d2b0, 3px 3px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.2rem;
+    border-bottom: 1px dashed #b48c5c;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+input,
+button {
+    padding: 12px 18px;
+    margin: 8px 5px;
+    border: 2px solid #b48c5c;
+    border-radius: 20px 5px 20px 5px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    background-color: #fcf5e8;
+    color: #3a2b1d;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05), 3px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+input {
+    background-color: #fffbf3;
+    border: 2px solid #c9a87c;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8b6f50;
+    box-shadow: 0 0 0 3px rgba(201, 168, 124, 0.3), inset 0 1px 3px #d4b28c;
+    background-color: #fffffa;
+}
+
+button {
+    background-color: #b48c5c;
+    color: #2c1e12;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 2px solid #efdecb;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 3px #efdecb;
+}
+
+button:hover {
+    background-color: #c9a87c;
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+    border-color: #fff3df;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fcf3e1;
+    border: 8px double #b48c5c;
+    border-radius: 0;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.15), inset 0 0 20px #e9d2b0;
+    font-family: 'Georgia', serif;
+    color: #2c2c2c;
+    position: relative;
+    background-image: radial-gradient(circle at 10px 10px, #e9d2b0 2px, transparent 2px),
+        radial-gradient(circle at 30px 25px, #e9d2b0 2px, transparent 2px);
+    background-size: 40px 40px, 80px 80px;
+    background-position: 0 0, 20px 20px;
+}
+
+.loading {
+    color: #6b4f32;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    background: #faf0db;
+    border-left: 5px solid #b48c5c;
+}
+
+.error {
+    color: #8b3a3a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px;
+    background: #ffe4e1;
+    border-left: 5px solid #b22222;
+    border-radius: 0 10px 10px 0;
+}
+
+.book {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #d4b28c;
+    transition: all 0.2s;
+    background: rgba(255, 245, 230, 0.7);
+    border-left: 3px solid #c9a87c;
+}
+
+.book:hover {
+    background: #fff5e6;
+    padding-left: 20px;
+    border-left-width: 6px;
+    border-left-color: #8b6f50;
+}
+
+.book strong {
+    color: #4a3724;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    border-bottom: 1px dotted #b48c5c;
+    padding-bottom: 3px;
+}
+
+
+.book::after {
+    content: "✎";
+    float: right;
+    color: #b48c5c;
+    font-size: 1.2rem;
+    opacity: 0.4;
+    transform: rotate(-10deg);
+}
+
+
+.container,
+.container-fluid {
+    position: relative;
+    z-index: 5;
+}
