@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/catalogo.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
     <title>Libreria</title>
 
 </head>
@@ -55,17 +55,44 @@
         </nav>
         <!--Esta es la imagen del header que es un libro y el titulo; quizá le debí haber puesto otro titulo :(-->
         <div class="img-header">
-            <img src="../images/Designer.png" class="img-fluid" alt="Imagen de header">
+            <img src="../images/fondocontacto2.png" class="img-fluid" alt="Imagen de header">
         </div>
         <div class="content"></div>
     </header>
     <main>
-        <div class="card-container" id="card-container">
-        </div>
+        <section class="titulocont">
+            <h2>Contáctanos</h2>
+            <p>Envíanos un correo para tus dudas o comentarios</p>
+
+
+            <section class="infocontact">
+                <h3>Información de contacto</h3>
+                <p><b>Dirección:</b> Medellín</p>
+                <p><b>Teléfono:</b> +57 300 000 0000</p>
+                <p><b>Email:</b> contacto@gmail.com</p>
+                <p><b>Horario:</b> Lunes a Viernes 9:00am - 8:00pm</p>
+            </section>
+
+
+            <section class="formulariocontact">
+                <h3>Envíanos un mensaje</h3>
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
     </main>
-
-
-    <script src="../scripts/catalogo.js"></script>
 </body>
 
 </html>

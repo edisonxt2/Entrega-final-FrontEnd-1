@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1rem;
     color: #1a214d;
 }
@@ -75,7 +75,7 @@ body {
     font-size: 1rem;
     padding: 0.6rem;
     font-weight: 500;
-    text-shadow: 0 0 0.25rem #111;
+    text-shadow: 0 0 0.4rem #112;
     transition: all 0.6s;
     border-radius: 0.5rem;
     border-bottom: 1px solid #0000;
@@ -280,10 +280,9 @@ main {
 footer {
     padding: 2rem;
     color: #fff;
-    height: auto;
     font-weight: bold;
     flex-flow: row wrap;
-    gap: 1.4rem;
+    gap: 1rem;
     background-color: #000;
     display: flex;
     justify-content: space-evenly;
@@ -291,9 +290,6 @@ footer {
 
 .integrantes {
     width: 20rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
     text-align: center;
 }
 
@@ -304,26 +300,17 @@ footer {
 .attention_a {
     text-align: center;
     width: 20rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
 }
 
-.redes {
-    align-items: center;
+.redes{
+    padding: 2rem;
     width: 20rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem;
-
+    text-align: center;
 }
 
 .redes a {
     text-decoration: none;
     color: #fff;
-    display: flex;
-    align-items: center;
-    text-indent: 1rem;
 }
 
 .redes a:hover {
@@ -337,7 +324,5 @@ footer {
 
 .derechos_reservados {
     width: 100%;
-    justify-content: center;
-    align-content: center;
     text-align: center;
 }

@@ -37,28 +37,6 @@ const pintarLibro = async () => {
     }
 }
 
-//esta es la función comentada arriba que deberia buscar por titulo de libro pero solo busca por autor :(
-const fetchBuscar = async (nomLibro) => {
-    try {
-        const buscarL = await fetch(`https://www.googleapis.com/books/v1/volumes?q=search+intitle${encodeURIComponent(nomLibro)}`)
-        const datosBl = await buscarL.json();
-        return datosBl
-
-    } catch (error) {
-    }
-}
-
-buscar.addEventListener('keydown', async(buscar)=>{
-    if(buscar.key === 'Enter'){
-        buscar.preventDefault();
-        const buscarlb = buscar.value;
-        const buscarl = await fetchBuscar(buscarlb);
-        console.log(buscarl)
-    }
-}
-
-)
-
 
 
 
