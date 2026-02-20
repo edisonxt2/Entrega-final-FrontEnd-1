@@ -17,7 +17,7 @@ body {
 .header {
     position: relative;
     background-color: #000;
-    height: 100vh;
+    height: 30vh;
     max-height: 625px;
 }
 
@@ -63,6 +63,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .header .navbar .navbar-nav {
     /*este es el contenedor del navbar*/
     display: flex;
@@ -119,87 +120,92 @@ body {
     width: 100%;
 }
 
-/*MAIN***********************************************+*/
+/*******************************************************************************/
+main {
+    background: linear-gradient(to right, #def1bf6c, #fff, #def1bf6c);
+    padding: 4rem 0;
+}
 
-.main-title {
+
+/* Bienvenida */
+.titulocont {
     text-align: center;
-    font-size: 2.4rem;
-    color: #1a214d;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.welcome_section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #125325;
+}
+
+/* Info rápida */
+.infocontact {
+    padding: 1.5rem;
+    background: #fff;
+    margin: 1rem auto;
+    max-width: 700px;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.infocontact h3 {
+    color: #125325;
     margin-bottom: 1rem;
 }
 
-.card-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 1rem;
-    padding-bottom: 8rem;
-    border-bottom: 1px solid #ccc;
-    margin-top: 2rem;
-    z-index: 14;
+/* Formulario */
+.formulariocontact {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* From Uiverse.io by gharsh11032000 */
-.card {
-    position: relative;
-    width: 22vw;
-    height: 22vw;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.formulariocontact h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #125325;
+}
+
+.formulariocontact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulariocontact label {
+    font-weight: bold;
+}
+
+.formulariocontact input,
+.formulariocontact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+.formulariocontact input:focus,
+.formulariocontact textarea:focus {
+    border-color: #125325;
+    outline: none;
+    box-shadow: 0 0 6px #12532555;
+}
+
+.formulariocontact button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: linear-gradient(to right, #744612, #a7753d, #744612);
+    color: #fff;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+.formulariocontact button:hover {
+    background: #125325;
+    transition: 0.4s;
 }
-
-.card__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-decoration: none;
-}
-
-.card:hover .card__content {
-    transform: rotateX(0deg);
-}
-
-.card__title {
-    font-size: 1.3rem;
-    color: #333;
-    font-weight: 700;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card:hover img {
-    scale: 0;
-}
-
-.card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #777;
-    line-height: 1.4;
-}
-
