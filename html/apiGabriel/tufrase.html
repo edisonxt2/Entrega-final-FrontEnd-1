@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="frasestyle.css">
+    <title>Frase</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="navbar-brand"><img src="/images/FullLogo_Transparent_NoBuffer.png"
+                        alt="Logo de la libreria"></div> <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                                href="/html/index.html">Home</a> </li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"> <a class="nav-link" href="/html/catalogo.html">Catalogo</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/html/reservas.html">Reservas</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/html/contacto.html">Contacto</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/html/api.html">APIS</a> </li>
+                    </ul> <!--Espacio para el boton de login falta terminar-->
+                    <form class="d-flex" role="search"> <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search" /> <button class="btn btn-outline-success"
+                            type="button" onclick="window.location.href='indexlogin.html'">Login</button> </form>
+                </div>
+            </div>
+        </nav>
+        <!--Esta es la imagen del header que es un libro y el titulo; quizá le debí haber puesto otro titulo :(-->
+        <div class="img-header"> <img src="/images/testdeimagen.png" class="img-fluid" alt="Imagen de header"> </div>
+    </header>
+    <main class="main" id="main"> <!-------------------------------------------------------->
+        <h1>Generador de Frases Motivacionales</h1>
+        <div id="frase-container" style="margin:20px; padding:20px; border:1px solid #ccc;">
+            <p id="frase">Haz clic en el botón para obtener una frase</p>
+            <h4 id="autor"></h4>
+            <button id="frase2" type="button">pedir</button>
+    </main>
+    <footer>
+        <div class="integrantes">
+            <h2>INTEGRANTES</h2>
+            <p>Edison Santiago Vanegas</p>
+            <p>Yisleza Vargas Holguin</p>
+            <p>Jose Gabriel Chacon Osorio</p>
+            <p>Miguel Ángel Lozano</p>
+        </div>
+        <div class="attention_a">
+            <h2>Horario de atención</h2>
+            <p>Lunes a Viernes: 9:00 - 18:00</p>
+            <p>Sábados: 10:00 - 14:00</p>
+        </div>
+        <div class="redes">
+            <div> <a href="#"><img src="/images/facebook.png" alt="Logo facebook"> libreriatodoamil </a> </div>
+            <div> <a href="#"><img src="/images/whatsapp.png" alt="Logo Whatsap"> @libreriatodomil </a> </div>
+            <div> <a href="#"><img src="/images/instagram.png" alt="Logo Instagram"> Libreria_t_a_Mil </a> </div>
+        </div>
+        <div class="derechos_reservados">
+            <p>Todos los derechos son reservados ©️</p>
+        </div>
+    </footer>
+    
+    <script src="frase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
