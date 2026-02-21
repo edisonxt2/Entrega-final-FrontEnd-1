@@ -1,99 +1,258 @@
 :root {
-    --primary: #00ff88;
+    --primary: #00ff37;
     --dark: #121212;
     --card-bg: #ffffff;
-    --text-main: #1a1a1a;
-    --text-muted: #666;
-    --shadow-static: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top left, #141428, #0f0f1a);
 }
 
+.header{
+    position: relative;
+    background-color: #000;
+}
 
+.header .navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.header .bg-body-tertiary {
+    background-color: #0000 !important;
+    border-bottom: 1px solid #fff7;
+}
+
+.header .bg-body-tertiary, .navbar, .navbar-expand-lg{
+    /*pendiente*/
+    color: #fff;
+}
+
+.header .navbar .container-fluid .navbar-brand {
+    /*este es el boton main o donde ira el logo*/
+    background-color: #f2f2f21a;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+    margin-right: 8%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.1);
+    border-bottom: 1px solid #000;
+}
+
+.header .navbar .container-fluid .navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #000;
+}
+
+.header .navbar .navbar-nav{
+    /*este es el contenedor del navbar*/
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    /*estos son los a de la barra de navegación*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    font-weight: 500;
+    transition: all 0.6s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    /*estos son los a de la barra de navegación*/
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(255, 255, 255);
+}
 
 .hero-section {
     text-align: center;
-    padding: 60px 20px;
-    background: #1a1a1a;
-    color: white;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
 }
 
 .main-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--primary);
     text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0 0 20px 0;
 }
 
 .search-container input {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px 20px;
-    border-radius: 30px;
-    border: none;
+    width: 90%;
+    max-width: 500px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
     outline: none;
 }
 
-.player-grid {
+/* ===== GRID ===== */
+#playerGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 40px 5%;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px;
 }
 
+/* ===== CARD ===== */
 .card {
-    background: var(--card-bg);
-    border-radius: 20px;
+    background: linear-gradient(145deg, #1e1e2f, #252540);
+    border-radius: 18px;
     overflow: hidden;
-    cursor: pointer;
-    box-shadow: var(--shadow-static);
-    transition: transform 0.3s ease;
+    color: #fff;
+    position: relative;
+
+    box-shadow: 0 0 15px rgba(0, 114, 255, 0.4);
+    transition: all 0.4s ease;
 }
 
+/* Hover efecto pro */
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
+/* ===== IMAGEN ===== */
 .card img {
     width: 100%;
     height: 320px;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 200, 255, 0.9);
+}
+
+/* ===== BODY ===== */
 .card-body {
-    padding: 20px;
-    text-align: center;
+    padding: 18px;
 }
 
+.card-body h3 {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 20px;
+    background: linear-gradient(
+        45deg,
+        #00f0ff,
+        #0072ff,
+        #8a2be2,
+        #00f0ff
+    );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.6;
+    animation: glowMove 6s linear infinite;
+}
+
+@keyframes glowMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 400% 50%; }
+}
+
+/* ===== BADGE POSICIÓN ===== */
 .position-badge {
-    background: #e8fff3;
-    color: #10b981;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 0.8rem;
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 12px;
     font-weight: bold;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
 }
 
+/* ===== INFO EXTRA ===== */
 .extra-info {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.card.active .extra-info {
-    max-height: 300px;
-    opacity: 1;
-    padding: 20px;
-    border-top: 1px solid #eee;
+    padding: 15px 18px;
+    border-top: 1px solid rgb(255, 255, 255);
+    font-size: 13px;
+    background: rgb(255, 255, 255);
 }
 
 .stat-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+}
+
+/* ===== ANIMACIÓN DE ENTRADA ===== */
+.card {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .card img {
+        height: 250px;
+    }
 }
