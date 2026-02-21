@@ -202,3 +202,53 @@ main {
     line-height: 1.4;
 }
 
+/*FOOTER***********************************************+*/
+footer {
+    padding: 2rem;
+    color: #fff;
+    font-weight: bold;
+    flex-flow: row wrap;
+    gap: 1rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.integrantes {
+    width: 20rem;
+    text-align: center;
+}
+
+.integrantes h2 {
+    margin-bottom: 1rem;
+}
+
+.attention_a {
+    text-align: center;
+    width: 20rem;
+}
+
+.redes{
+    padding: 2rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes a:hover {
+    color: #e8f539;
+    transition: all 0.7s;
+}
+
+.redes a img {
+    width: 2.5rem;
+}
+
+.derechos_reservados {
+    width: 100%;
+    text-align: center;
+}
