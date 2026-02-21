@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1rem;
+    color: #1a214d;
+}
+
+.header{
+    position: relative;
+    background-color: #000;
+    height: 100vh;
+    max-height: 625px;
+}
+
+.header .navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.header .bg-body-tertiary {
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 2px solid #7772;
+    box-shadow: 0 0 0.8rem #0003;
+}
+
+.header .bg-body-tertiary, .navbar, .navbar-expand-lg{
+    /*pendiente*/
+    color: #fff;
+}
+
+.header .navbar .container-fluid .navbar-brand {
+    /*este es el boton main o donde ira el logo*/
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+    margin-right: 8%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.header .navbar .container-fluid .navbar-brand:hover {
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #000;
+}
+
+.header .navbar .container-fluid .navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.header .navbar .navbar-nav{
+    /*este es el contenedor del navbar*/
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    /*estos son los a de la barra de navegación*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    font-weight: 500;
+    text-shadow: 0 0 0.4rem #112;
+    transition: all 0.6s;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #0000;
+
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    /*estos son los a de la barra de navegación*/
+    background-color: #f5dfdf3f;
+    transform: scale(1.1);
+    border-bottom: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.header .navbar .collapse .d-flex .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.header .img-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100% ;
+}
+
+.header .img-header img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+/*-----------Main-----------*/
+
+main {
+
+    z-index: 5;
+    border-top: 1px solid #000;
+    position: relative;
+    padding-top: 20vh;
+}
+
+.main .img-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100% ;
+}
+
+.main .img-main img {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.main .container-main .main-cards h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: #333;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.main .container-main .main-cards h2 {
+    margin-top: 2rem;
+}
+
+.main .container-main .main-cards .card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap:0.2rem;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.main .container-main .main-cards .card-container img {
+    width: 100%;
+    height: 23rem;
+    object-fit: fill;
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+.main .container-main .main-cards .card-container img:hover {
+    width: 100%;
+    scale: 0.95;
+    
+}
+
+.main .container-main .main-cards .card-container .card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px #0006;
+    border: 1px solid #32643f9d;
+    transition: all 1s;
+    width: 20rem;
+}
+
+.main .container-main .main-cards .card-container .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px #0008;
+    cursor: pointer;
+}
+
+
+.container-main .main-cards .card-container .card .card-body:hover {
+    background-color: #d7f7cfd5;
+}
+
+
+/*Card form universe*********/
+/* From Uiverse.io by gharsh11032000 */
+.cards {
+    position: relative;
+    width: 22vw;
+    height: 27vw;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+
+}
+
+.cards__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s;
+    font-weight: normal;
+}
+
+.cards:hover .cards__content {
+    transform: rotateX(0deg);
+    font-weight: normal;
+    background-color: #f2f2f2;
+    color: #000;
+
+}
+
+.cards__title {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+.cards .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards:hover .img {
+    scale: 0;
+    z-index: -1;
+}
+
+.cards__description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.4;
+}
+
+
+
+/*Footer*/
+
+footer {
+    padding: 2rem;
+    color: #fff;
+    font-weight: bold;
+    flex-flow: row wrap;
+    gap: 1rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.integrantes {
+    width: 20rem;
+    text-align: center;
+}
+
+.integrantes h2 {
+    margin-bottom: 1rem;
+}
+
+.attention_a {
+    text-align: center;
+    width: 20rem;
+}
+
+.redes{
+    padding: 2rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes a:hover {
+    color: #e8f539;
+    transition: all 0.7s;
+}
+
+.redes a img {
+    width: 2.5rem;
+}
+
+.derechos_reservados {
+    width: 100%;
+    text-align: center;
+}
