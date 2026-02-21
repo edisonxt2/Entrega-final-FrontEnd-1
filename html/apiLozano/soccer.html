@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Pro - Galería de Jugadores</title>
+    <link rel="stylesheet" href="Soccer.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <h1 class="main-title">Draft Pro</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar jugador o equipo...">
+        </div>
+    </section>
+
+    <main class="player-grid" id="playerGrid">
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/Messi.v2.jpg" alt="Messi">
+            <div class="card-body">
+                <span class="position-badge">Delantero</span>
+                <h3>Lionel Messi</h3>
+                <p>Inter Miami</p>
+            </div>  
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles:</strong> 821</div>
+                <div class="stat-row"><strong>Asistencias:</strong> 361</div>
+                <div class="stat-row"><strong>Balones de Oro:</strong> 8</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/EL diablo rojo.jpg" alt="Cristiano Ronaldo">
+            <div class="card-body">
+                <span class="position-badge">Delantero</span>
+                <h3>Cristiano Ronaldo</h3>
+                <p>Al-Nassr</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles:</strong> 873</div>
+                <div class="stat-row"><strong>Champions:</strong> 5</div>
+                <div class="stat-row"><strong>Edad:</strong> 39</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/Mbappe.jpg" alt="Mbappe">
+            <div class="card-body">
+                <span class="position-badge">Extremo</span>
+                <h3>Kylian Mbappé</h3>
+                <p>Real Madrid</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles:</strong> 280+</div>
+                <div class="stat-row"><strong>Velocidad Máx:</strong> 38 km/h</div>
+                <div class="stat-row"><strong>Mundiales:</strong> 1</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/halaand.webp" alt="Haaland">
+            <div class="card-body">
+                <span class="position-badge">Delantero Centro</span>
+                <h3>Erling Haaland</h3>
+                <p>Manchester City</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles Premier:</strong> 36 (Record)</div>
+                <div class="stat-row"><strong>Altura:</strong> 1.94 m</div>
+                <div class="stat-row"><strong>Nacionalidad:</strong> Noruega</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/JBv.2.jpg" alt="Jude Bellingham">
+            <div class="card-body">
+                <span class="position-badge">Mediocampista</span>
+                <h3>Jude Bellingham</h3>
+                <p>Real Madrid</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles:</strong> 23</div>
+                <div class="stat-row"><strong>Edad:</strong> 20</div>
+                <div class="stat-row"><strong>Valor:</strong> €180M</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/kdb.jpg" alt="Kevin De Bruyne">
+            <div class="card-body">
+                <span class="position-badge">Mediocentro</span>
+                <h3>Kevin De Bruyne</h3>
+                <p>Manchester City</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Asistencias:</strong> 250+</div>
+                <div class="stat-row"><strong>Precisión Pase:</strong> 89%</div>
+                <div class="stat-row"><strong>Visión:</strong> 99</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/vinicius.webp" alt="Vinicius">
+            <div class="card-body">
+                <span class="position-badge">Extremo</span>
+                <h3>Vinícius Jr</h3>
+                <p>Real Madrid</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Regates:</strong> 112</div>
+                <div class="stat-row"><strong>Champions:</strong> 2</div>
+                <div class="stat-row"><strong>País:</strong> Brasil</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/lewandoski.webp" alt="Lewandowski">
+            <div class="card-body">
+                <span class="position-badge">Delantero</span>
+                <h3>R. Lewandowski</h3>
+                <p>FC Barcelona</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Botas de Oro:</strong> 2</div>
+                <div class="stat-row"><strong>Goles:</strong> 600+</div>
+                <div class="stat-row"><strong>Nacionalidad:</strong> Polonia</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/Salah.png" alt="Salah">
+            <div class="card-body">
+                <span class="position-badge">Extremo</span>
+                <h3>Mohamed Salah</h3>
+                <p>Liverpool</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Goles Liverpool:</strong> 200+</div>
+                <div class="stat-row"><strong>País:</strong> Egipto</div>
+                <div class="stat-row"><strong>Premier:</strong> 1</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <img src="img/Courtois.jpg" alt="Courtois">
+            <div class="card-body">
+                <span class="position-badge">Portero</span>
+                <h3>Thibaut Courtois</h3>
+                <p>Real Madrid</p>
+            </div>
+            <div class="extra-info">
+                <div class="stat-row"><strong>Paradas:</strong> 500+</div>
+                <div class="stat-row"><strong>Altura:</strong> 2.00 m</div>
+                <div class="stat-row"><strong>Guante de Oro:</strong> 1</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Soccer.js"></script>
+</body>
+</html>
