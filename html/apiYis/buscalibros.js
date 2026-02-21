@@ -3,8 +3,8 @@ const btnBuscar = document.getElementById("btnBuscar");
 const inputBusqueda = document.getElementById("inputBusqueda");
 
 btnBuscar.addEventListener("click", async () => {
-    const query = inputBusqueda.value.trim();
-    if (!query) {
+    const dato = inputBusqueda.value.trim();
+    if (!dato) {
         resultado.innerHTML = "<p class='error'>Por favor escribe algo para buscar.</p>";
         return;
     }
@@ -13,7 +13,7 @@ btnBuscar.addEventListener("click", async () => {
 
     try {
         // API de Open Library: búsqueda por título/autor
-        const respuesta = await fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(query)}`);
+        const respuesta = await fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(dato)}`);
 
         if (!respuesta.ok) {
             throw new Error("Error en la solicitud: " + respuesta.status);
@@ -36,7 +36,7 @@ btnBuscar.addEventListener("click", async () => {
         <strong>${libro.title}</strong><br>
         Autor(es): ${libro.author_name ? libro.author_name.join(", ") : "Desconocido"}<br>
         Año: ${libro.first_publish_year || "N/A"}
-      `;
+        `;
             resultado.appendChild(div);
         });
 
